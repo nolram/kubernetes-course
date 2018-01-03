@@ -1,0 +1,103 @@
+1748  kops create cluster --name=test-kops-nolram.ml --state=s3://kops-state-b11fdd --zones=us-east-1a --node-count=2 --node-size=t2.micro --master-size=t2.micro --dns-zone=test-kops-nolram.ml
+ 1749  kops edit cluster test-kops-nolram.ml
+ 1750  kops edit cluster test-kops-nolram.ml --state=s3://kops-state-b11fdd
+ 1751  clear
+ 1752  cat ~/.kube/config 
+ 1753  kubectl node
+ 1754  kubectl get node
+ 1755  clear
+ 1756  history | grep kubectl run
+ 1757  history | grep kubectl
+ 1758  kubectl run hello-minikube --image=gcr.io/google_containers/echoserver:1.4 --port=8080
+ 1759  kubectl expose deployment hello-minikube --type=NodePort
+ 1760  kubectl get service
+ 1761  kops delete cluster test-kops-nolram.ml --state=s3://kops-state-b11fdd
+ 1762  kops delete cluster test-kops-nolram.ml --state=s3://kops-state-b11fdd --yes
+ 1763  mkdir node_app_test
+ 1764  cd node_app_test/
+ 1765  clear
+ 1766  vim Dockerfile
+ 1767  cat Dockerfile 
+ 1768  clear
+ 1769  ls
+ 1770  cd ..
+ 1771  git clone git@github.com:nolram/kubernetes-course.git
+ 1772  cd kubernetes-course/
+ 1773  clear
+ 1774  curl localhost:3000
+ 1775  clear
+ 1776  docker login
+ 1777  clear
+ 1778  docker tag help
+ 1779  docker tag node-app-test-kubernets:latest nolram/node-app-kubernetes:latest
+ 1780  docker image ls
+ 1781  docker push nolram/node-app-kubernetes
+ 1782  clear
+ 1783  docker container ls
+ 1784  docker container stop 0aec
+ 1785  history | kubectl
+ 1786  history | grep kubectl
+ 1787  kubectl config set-context minikube
+ 1788  kubectl version
+ 1789  minikube start
+ 1790  clear
+ 1791  cat first-app/helloworld.yml 
+ 1792  clear
+ 1793  kubectl create -f first-app/helloworld.yml 
+ 1794  kubectl get pod
+ 1795  kubectl describe pod nodehelloworld.example.com 
+ 1796  kubectl port-forward nodehelloworld.example.com 8081:3000
+ 1797  kubectl get pod
+ 1798  kubectl describe pod nodehelloworld.example.com 
+ 1799  kubectl get pod
+ 1800  kubectl port-forward nodehelloworld.example.com 8081:3000
+ 1801  clear
+ 1802  kubectl expose pode nodehelloworld.example.com --type=NodePort --name nodehelloworld-service
+ 1803  kubectl get pod
+ 1804  kubectl expose pode nodehelloworld.example.com --type=NodePort --name nodehelloworld-service
+ 1805  kubectl expose pod nodehelloworld.example.com --type=NodePort --name nodehelloworld-service
+ 1806  clear
+ 1807  minikube service nodehelloworld-service --ulr
+ 1808  minikube service nodehelloworld-service --url
+ 1809  kubectl get service
+ 1810  clear
+ 1811  kubectl describe service nodehelloworld-service 
+ 1812  clear
+ 1813  kubectl run -i --tty busybox --image=busybox --restart=N
+ 1814  kubectl run -i --tty busybox --image=busybox --restart=No
+ 1815  kubectl run -i --tty busybox --image=busybox --restart=None
+ 1816  kubectl run --help
+ 1817  kubectl run -i --tty busybox --image=busybox --restart=Never
+ 1818  clear
+ 1819  cd
+ 1820  df
+ 1821  clear
+ 1822  df
+ 1823  cleard
+ 1824  clear
+ 1825  history | grep kops 
+ 1826  kops create cluster --name=test-kops-nolram.ml --state=s3://kops-state-b11fdd --zones=us-east-1a --node-count=2 --node-size=t2.micro --master-size=t2.micro --dns-zone=test-kops-nolram.ml
+ 1827  kops update cluster test-kops-nolram.ml --yes --dns-zone=test-kops-nolram.ml
+ 1828  kops update cluster test-kops-nolram.ml --yes
+ 1829  kops update cluster test-kops-nolram.ml --yes --statetest-kops-nolram.ml
+ 1830  kops update cluster test-kops-nolram.ml --yes --state=test-kops-nolram.ml
+ 1831  kops update cluster test-kops-nolram.ml --yes --state=s3://kops-state-b11fdd
+ 1832  kubectl get node
+ 1833  vagrant init ubuntu/xenial64
+ 1834  ls
+ 1835  mkdir Vagrant
+ 1836  cd Vagrant/
+ 1837  vagrant init ubuntu/xenial64
+ 1838  mkdir ubuntu_xenial
+ 1839  cd ubuntu_xenial/
+ 1840  cd ..
+ 1841  mv Vagrantfile ubuntu_xenial/
+ 1842  ls
+ 1843  cd ubuntu_xenial/
+ 1844  vagrant up
+ 1845  vagrant ssh
+ 1846  vagrant --help
+ 1847  vagrant
+ 1848  vagrant ssh
+ 1849  history | tail
+ 1850  history
